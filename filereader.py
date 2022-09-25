@@ -41,7 +41,7 @@ class index_file:
         for path in paths:
             # strip off thje base path for eath path
             relativeDirectory = path.replace(self.base, "")
-            print (relativeDirectory[1:])
+            #print (relativeDirectory[1:])
             # now it's left with just the game/file.sh
 
             dirSplit = re.split("\/", relativeDirectory[1:], 1)
@@ -54,5 +54,5 @@ class index_file:
                 #title already exists in dictionary
                 sh_dict[title+"_alt"] = path
 
-        print (sh_dict)
+        #print (sh_dict)
         return sh_dict
