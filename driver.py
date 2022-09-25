@@ -34,4 +34,5 @@ if customFile == 0:
 
 reader = filereader.index_file(filename)
 
-sh_list = reader.getFileContents()
+#sh_list = reader.getFileContents()
+reader.getFileContentsAsDictionary()
